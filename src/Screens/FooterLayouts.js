@@ -58,7 +58,7 @@ const Footer = () => {
       <div style={footerContainerStyle}>
         {/* Company Info */}
         <div style={footerColumnStyle}>
-          <h3 style={sectionHeadingStyle}>ADHITYA CRACKERS</h3>
+          <h3 style={sectionHeadingStyle}>NEW CRACKERS</h3>
           <p style={descriptionStyle}>
             Firecracker specialists with over a decade of excellence in manufacturing, retailing, and wholesale distribution.
           </p>
@@ -102,16 +102,16 @@ const Footer = () => {
             <div style={contactItemStyle}>
               <FiPhone style={contactIconStyle} />
               <div>
-                <a href="tel:+919842155255" style={contactLinkStyle}>+91 9842155255</a>
+                <a href="tel:+915876675999" style={contactLinkStyle}>+91 5876675999</a>
                 <br />
-                <a href="tel:+919842792373" style={contactLinkStyle}>+91 9842792373</a>
+                <a href="tel:+919008656457<" style={contactLinkStyle}>+91 9008656457</a>
               </div>
             </div>
             
             <div style={contactItemStyle}>
               <FiMail style={contactIconStyle} />
-              <a href="mailto:reliableups14@gmail.com" style={contactLinkStyle}>
-                reliableups14@gmail.com
+              <a href="mailto:newcrackers@gmail.com" style={contactLinkStyle}>
+                newcrackers@gmail.com
               </a>
             </div>
             
@@ -122,55 +122,28 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Map Section */}
-        <div style={footerColumnStyle}>
-          <h4 style={sectionHeadingStyle}>
-            <FiMapPin style={headingIconStyle} />
-            Location
-          </h4>
-          
-          <div style={compactMapContainer}>
-          
-            <a 
-              href="https://www.google.co.in/maps/place/ADHITYA+CRACKERS/@8.728266,77.7790846,17z" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              style={compactMapLink}
-            >
-              <div style={compactMapWrapper}>
-                <iframe
-                  title="Adhitya Crackers Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.123456!2d77.7790846!3d8.728266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b040f05c295c57d%3A0xe1b0206aec191b6b!2sADHITYA%20CRACKERS!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                  style={compactMapIframe}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-           
-            </a>
-          </div>
+           <div style={footerColumnStyle}>
+          <h4 style={footerHeadingStyle}>Newsletter</h4>
+          <p style={footerTextStyle}>Subscribe to get updates on new products and offers</p>
+          <form style={newsletterFormStyle}>
+            <input
+              type="email"
+              placeholder="Your Email Address"
+              style={newsletterInputStyle}
+              required
+            />
+            <button type="submit" style={newsletterButtonStyle}>
+              <FiSend style={sendIconStyle} /> Subscribe
+            </button>
+          </form>
         </div>
       </div>
 
+     
+      
+
       {/* Locations Row */}
-      <div style={{...locationsContainerStyle, borderTop: '1px solid rgba(255, 255, 255, 0.1)'}}>
-        <h4 style={locationsHeadingStyle}>
-          <span style={headingIconStyle}>📍</span>
-          Our Locations
-        </h4>
-        <div style={locationsGridStyle}>
-          {addresses.map((location, index) => (
-            <div key={index} style={locationCardStyle}>
-              <div style={locationHeaderStyle}>
-                <FiMapPin style={locationIconStyle} />
-                <span style={locationNameStyle}>{location.name}</span>
-              </div>
-              <p style={locationAddressStyle}>{location.address}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+     
 
       {/* Bottom Section */}
       <div style={bottomSectionStyle}>
@@ -221,9 +194,10 @@ const Footer = () => {
 };
 
 // === Styles ===
+// === Styles ===
 const footerStyle = {
-  background: 'linear-gradient(135deg, #0a0e27 0%, #1a237e 50%, #283593 100%)',
-  color: 'white',
+  background: '#900048', // Red gradient
+  color: '#fff',
   position: 'relative',
   overflow: 'hidden',
   paddingTop: '0.5rem',
@@ -250,15 +224,17 @@ const sectionHeadingStyle = {
   fontSize: '1.1rem',
   fontWeight: '600',
   marginBottom: '1rem',
-  color: 'white',
+  color: '', // Gold heading
   display: 'flex',
   alignItems: 'center',
   gap: '0.5rem',
   marginTop: 0,
 };
 
+
 const headingIconStyle = {
   fontSize: '1rem',
+  color: '#900048',
 };
 
 const descriptionStyle = {
@@ -286,11 +262,16 @@ const linkStyle = {
   fontSize: '0.9rem',
   transition: 'all 0.3s ease',
   padding: '0.2rem 0',
+  color: '#e0e0e0',
+  ':hover': {
+    color: '#900048',
+    transform: 'translateX(5px)',
+  },
 };
 
 const chevronStyle = {
   fontSize: '0.8rem',
-  color: '#FFD700',
+  color: '#ff8260',
 };
 
 const contactDetailsStyle = {
@@ -307,7 +288,7 @@ const contactItemStyle = {
 
 const contactIconStyle = {
   fontSize: '1rem',
-  color: '#FFD700',
+  color: '#ff8260',
   marginTop: '2px',
   flexShrink: 0,
 };
@@ -318,7 +299,7 @@ const contactLinkStyle = {
   fontSize: '0.85rem',
   transition: 'color 0.3s ease',
   ':hover': {
-    color: '#FFD700'
+    color: '#ff8260'
   }
 };
 
@@ -335,24 +316,6 @@ const compactMapContainer = {
   border: '1px solid rgba(255,255,255,0.1)',
   padding: '10px',
   marginBottom: '0.5rem',
-};
-
-const compactMapHeader = {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '6px',
-  marginBottom: '6px',
-};
-
-const compactMapTitle = {
-  fontSize: '0.9rem',
-  fontWeight: '600',
-  color: '#FFD700',
-};
-
-const compactMapLink = {
-  display: 'block',
-  textDecoration: 'none',
 };
 
 const compactMapWrapper = {
@@ -372,30 +335,20 @@ const compactMapIframe = {
   border: 'none',
 };
 
-const compactMapFooter = {
-  marginTop: '6px',
-  textAlign: 'center',
-};
-
-const compactMapText = {
-  fontSize: '0.75rem',
-  color: '#d0d0d0',
-  textDecoration: 'underline',
-};
-
 // Locations Section
 const locationsContainerStyle = {
   maxWidth: '1200px',
   margin: '0 auto',
   padding: '1.5rem 1rem',
-  marginTop:"-5px"
+  marginTop: '-5px',
+  borderTop: '1px solid rgba(255, 255, 255, 0.1)',
 };
 
 const locationsHeadingStyle = {
   fontSize: '1.1rem',
   fontWeight: '600',
   marginTop: '-0.5rem',
-  color: 'white',
+  color: '#ff8260',
   display: 'flex',
   alignItems: 'center',
   gap: '0.5rem',
@@ -431,12 +384,12 @@ const locationHeaderStyle = {
 
 const locationIconStyle = {
   fontSize: '1rem',
-  color: '#FFD700',
+  color: '#ff8260',
 };
 
 const locationNameStyle = {
   fontWeight: '600',
-  color: '#FFD700',
+  color: '#ff8260',
   fontSize: '0.95rem',
 };
 
@@ -450,7 +403,7 @@ const locationAddressStyle = {
 
 // Bottom Section
 const bottomSectionStyle = {
-  background: 'linear-gradient(135deg, #0a0e27 0%, #1a237e 50%, #283593 100%)',
+  background: '#900048',
   borderTop: '1px solid rgba(255, 255, 255, 0.1)',
   backdropFilter: 'blur(10px)',
 };
@@ -464,7 +417,6 @@ const bottomContainerStyle = {
   alignItems: 'center',
   flexWrap: 'wrap',
   gap: '0.5rem',
- 
 };
 
 const copyrightStyle = {
@@ -499,16 +451,64 @@ const bottomLinkStyle = {
   textDecoration: 'none',
   fontSize: '0.8rem',
   transition: 'color 0.3s ease',
+  color: '#e0e0e0',
+  ':hover': {
+    color: '#FFD700',
+  },
 };
 
 const separatorStyle = {
   color: '#666',
   fontSize: '0.7rem',
 };
-
-const mapPinIconStyle = {
-  color: '#FFD700',
-  fontSize: '1.1rem',
+const compactMapLink = {
+  display: 'block',
+  textDecoration: 'none',
+  color: 'inherit',
+  transition: 'all 0.3s ease',
+  ':hover': {
+    opacity: 0.9
+  }
+};
+const footerHeadingStyle = {
+  fontSize: '1.2rem',
+  marginBottom: '1.5rem',
+  color: 'white',
+};
+const footerTextStyle = {
+  fontSize: '0.9rem',
+  lineHeight: '1.6',
+  color: '#e0e0e0',
+  margin: '0.5rem 0',
+};
+const newsletterFormStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: '0.5rem',
 };
 
+const newsletterInputStyle = {
+  padding: '0.8rem',
+  borderRadius: '5px',
+  border: 'none',
+  fontSize: '0.9rem',
+};
+
+const newsletterButtonStyle = {
+  padding: '0.8rem',
+  backgroundColor: '#240041',
+  color: 'white',
+  border: 'none',
+  borderRadius: '5px',
+  fontWeight: 'bold',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: '0.5rem',
+  cursor: 'pointer',
+  transition: 'all 0.3s ease',
+};
+const sendIconStyle = {
+  fontSize: '1rem',
+};
 export default Footer;

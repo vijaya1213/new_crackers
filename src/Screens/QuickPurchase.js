@@ -8,7 +8,7 @@ import { jsPDF } from "jspdf";
 import localforage from 'localforage';
 import Header from './HeaderLayouts';
 import Footer from './FooterLayouts';
-import quick_image from '../assets/quick_image.jpg';
+import quick_image from '../assets/images (3).jpg';
 import API_BASE_URL from "./apiConfig";
 import logo from "../assets/AthithyaLogo.png";
 function QuickPurchase() {

@@ -1,7 +1,7 @@
 // src/components/Header.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/AthithyaLogo.png";
+import logo from "../assets/img7.png";
 import { FiFacebook, FiInstagram, FiTwitter, FiLinkedin, FiMenu, FiX, FiDownload } from "react-icons/fi";
 import html2canvas from 'html2canvas';
 import { jsPDF } from 'jspdf';
@@ -45,7 +45,7 @@ const Header = () => {
     <div style={logoContainerStyle} className="logoContainerStyle">
         <img src={logo} style={logoStyle} alt="Sri Gokilaa Crackers" />
         <h2 style={{ margin: "0 0 0 10px", fontSize: "16px", color: "#fff7f7ff" }}>
-          Adhitya Crackers 
+          New Crackers 
         </h2>
       </div>
 
@@ -117,26 +117,31 @@ const NavLink = ({ to, children, onClick, special }) => {
 
 // === Styles === 
 const headerStyle = {
-  background: 'rgb(128, 0, 0)',
-  padding: '0.5rem 2rem',
+  background: 'linear-gradient(135deg, #240041, #240041)',
+  padding: '0.8rem 2rem',
+
+  boxShadow: '0 4px 25px rgba(233, 64, 87, 0.4)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
   position: 'sticky',
   top: 0,
   zIndex: 100,
-  color: '#ffffff',
+  color: '#FFFFFF',
 };
 
 const quickOrderStyle = {
-  color: '#ffffff',
-  textDecoration: 'none',
-  fontWeight: 'bold',
-  fontSize: '1rem',
-  padding: '0.5rem 1rem',
-  borderRadius: '8px',
-  transition: 'color 0.3s ease',
-  outline: 'none',
+  background: '#ff4057',
+  color: '#FFFFFF',
+  padding: '0.6rem 1.2rem',
+  borderRadius: '25px',
+  boxShadow: '0 4px 15px rgba(242, 113, 33, 0.5)',
+  transition: 'all 0.3s ease',
+  '&:hover': {
+    transform: 'translateY(-2px)',
+    boxShadow: '0 6px 20px rgba(242, 113, 33, 0.7)',
+    background: '#E94057'
+  }
 };
 
 const quickOrderHoverStyle = {

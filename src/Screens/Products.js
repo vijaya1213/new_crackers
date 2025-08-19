@@ -3,7 +3,7 @@ import axios from 'axios';
 import localforage from 'localforage';
 import { FiShoppingCart, FiX } from 'react-icons/fi';
 import API_BASE_URL from "./apiConfig";
-import pro_bg from "../assets/pro_bg.jpg";
+import pro_bg from "../assets/pro_bg2.webp";
 import Header from './HeaderLayouts';
 import Footer from './FooterLayouts';
 import { useNavigate } from 'react-router-dom';

@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from "./HeaderLayouts";
 import Footer from "./FooterLayouts";
-import safety1 from "../assets/safety-1.jpg";
+import safety1 from "../assets/images (1).jpg";
 import safety2 from "../assets/safety-2.jpg";
-import safety3 from "../assets/Safety-3.jpg";
+import safety3 from "../assets/safety-14.jpg";
 import safety4 from "../assets/safety-4.jpg";
-import safety6 from "../assets/safety-6.jpg";
-import safety7 from "../assets/safety-7.jpg";
-import safety8 from "../assets/safety-8.jpg";
-import safety9 from "../assets/safety-9.jpg";
+import safety6 from "../assets/safety-13.jpg";
+import safety7 from "../assets/img4.jpg";
+import safety8 from "../assets/img2.jpg";
+import safety9 from "../assets/img5.jpg";
 import safety10 from "../assets/safety-10.jpg";
-import safety11 from "../assets/safety-11.jpg";
+import safety11 from "../assets/img3.jpeg";
 import safety12 from "../assets/safety-12.jpg";
 
 const SafetyTips = () => {
@@ -40,21 +40,6 @@ const slidingTextContainerStylefooter = {
       <Header />
 
       {/* Top Marquee */}
-<div style={slidingTextContainerStyle}>
-  <marquee behavior="scroll" direction="left" scrollamount="10" style={{ margin: 0 }}>
-    📍 <strong>ADHITYA Crackers:</strong> Near New Housing Board, KTC Nagar, Tirunelveli - 627011
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>MMA Crackers:</strong> Plot.no.3, Anjaneya Nagar, E.Muthlingapuram, Survey no.238/1A1A1 , Sathur (Near NH Doll Gate), Virudhunagar - 626203
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>Porunai Crackers:</strong> 1/410, Four Lane Road, Near Rettiarpatti Hill, Tirunelveli - 627007
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    {/* 📍 <strong>ஆதித்யா பட்டாசு கடை:</strong> புதிய ஹவுசிங் போர்டு அருகில், கே.டி.சி நகர், திருநெல்வேலி - 627011
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>MMA பட்டாசு கடை:</strong> மனை எண்.3, ஆஞ்சனேயர் நகர், ஈ.முத்துலிங்கபுரம், சர்வே எண்.238/1A1A1, சாத்தூர் (NH டோல் கேட் அருகில்), விருதுநகர் - 626203
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>பொருநை பட்டாசு கடை:</strong> 1/410, நான்கு வழி சாலை, ரெட்டியார்பட்டி மலை அருகில், திருநெல்வேலி - 627007 */}
-  </marquee>
-</div>
 
       <div style={styles.container}>
         {/* Hero Section */}
@@ -163,21 +148,7 @@ const slidingTextContainerStylefooter = {
       </div>
 
       {/* Bottom Marquee */}
-<div style={slidingTextContainerStylefooter}>
-  <marquee behavior="scroll" direction="left" scrollamount="10" style={{ margin: 0 }}>
-    📍 <strong>ADHITYA Crackers:</strong> Near New Housing Board, KTC Nagar, Tirunelveli - 627011
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>MMA Crackers:</strong> Plot.no.3, Anjaneya Nagar, E.Muthlingapuram, Survey no.238/1A1A1 , Sathur (Near NH Doll Gate), Virudhunagar - 626203
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>Porunai Crackers:</strong> 1/410, Four Lane Road, Near Rettiarpatti Hill, Tirunelveli - 627007
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    {/* 📍 <strong>ஆதித்யா பட்டாசு கடை:</strong> புதிய ஹவுசிங் போர்டு அருகில், கே.டி.சி நகர், திருநெல்வேலி - 627011
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>MMA பட்டாசு கடை:</strong> மனை எண்.3, ஆஞ்சனேயர் நகர், ஈ.முத்துலிங்கபுரம், சர்வே எண்.238/1A1A1, சாத்தூர் (NH டோல் கேட் அருகில்), விருதுநகர் - 626203
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    📍 <strong>பொருநை பட்டாசு கடை:</strong> 1/410, நான்கு வழி சாலை, ரெட்டியார்பட்டி மலை அருகில், திருநெல்வேலி - 627007 */}
-  </marquee>
-</div>
+
 
       <Footer />
     </>
